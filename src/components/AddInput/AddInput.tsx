@@ -17,7 +17,7 @@ export default function AddInput({ onAdd }: AddInputProps) {
   }
 
   return (
-    <div className="input-container">
+    <div className="input-container" data-testid="add-input">
       <input 
         className="input" 
         value={todo} 
