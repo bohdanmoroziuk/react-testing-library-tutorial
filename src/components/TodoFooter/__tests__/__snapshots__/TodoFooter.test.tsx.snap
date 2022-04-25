@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoFooter /> renders successfully 1`] = `
+<div
+  class="todo-footer"
+  data-testid="todo-footer"
+>
+  <p>
+    0
+     
+    tasks
+     left
+  </p>
+  <a
+    href="/followers"
+  >
+    Followers
+  </a>
+</div>
+`;
