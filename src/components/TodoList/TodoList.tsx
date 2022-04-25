@@ -24,6 +24,7 @@ export default function TodoList({ todos, onUpdate }: TodoListProps) {
               className={`todo-item ${todo.completed && "todo-item-active"}`}
               key={todo.id}
               onClick={() => onUpdate(todo.id)}
+              data-testid="todo-item"
             >
               {todo.task}
             </div>
