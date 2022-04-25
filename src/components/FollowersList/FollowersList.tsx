@@ -22,15 +22,16 @@ export default function FollowersList() {
 
   useEffect(() => {
     const fetchFollowers = async () => {
-      const { data } = await axios.get("https://randomuser.me/api/?results=5");
-      setFollowers(data.results);
+      const response = await axios.get("https://randomuser.me/api/?results=5");
+
+      setFollowers(response.data.results);
     }
 
     fetchFollowers()
   }, []);
 
   return (
-    <div className="followers-list-container">
+    <div className="followers-list-container" data-testid="followers-list">
       <div>
         {followers.map((follower, index) => (
           <div
