@@ -1,5 +1,7 @@
 # React Testing Library Tutorial
 
+> Example of testing React app with Jest and React Testing Library.
+
 ## Available Scripts
 
 In the project directory, you can run:
